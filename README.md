@@ -62,6 +62,9 @@ This is a full-stack event booking system built with AI-assisted tools. It allow
 - Backend & Frontend deployment
 
 ---
+💳 You can enjoy admin features wthi this credentials
+Email :Ahmed@gmail.com
+Password: Ahmed123#
 
 ## 🛠 How to Run the Project Locally
 
