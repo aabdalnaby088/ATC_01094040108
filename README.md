@@ -57,9 +57,9 @@ This is a full-stack event booking system built with AI-assisted tools. It allow
 - Responsive design
 
 ### ✅ Bonus Features
--Backend & Frontend deployment
 - Multi-language support (English, Spanish)
 - Dark mode support
+- Backend & Frontend deployment
 
 ---
 
