@@ -65,11 +65,4 @@ This is the backend service for the Areeb Event Booking System, built using **Ne
 | **DeepSeek**       | Best-practice implementation and suggestions |
 
 
-## 🛠 Setup & Run Locally
-
-### 1️⃣ Clone & Install
-
-```bash
-cd areeb-backend
-npm install
 
