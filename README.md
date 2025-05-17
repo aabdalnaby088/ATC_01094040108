@@ -74,7 +74,7 @@ npm run dev
 
 
 ### 2️⃣ Backend Setup
-cd areeb-backend
+cd areeb-eventBooking-backend
 npm install
 npm run start
 
