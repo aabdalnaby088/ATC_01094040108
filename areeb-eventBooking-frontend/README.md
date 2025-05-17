@@ -1,54 +1,78 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Areeb Event Booking Frontend 🎨
 
-Currently, two official plugins are available:
+This is the frontend part of the Areeb Event Booking System. It was built using React + Vite + TypeScript, and styled with Tailwind CSS. The frontend allows users to browse, book events, and manage bookings — while providing an admin panel for event management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔐 User Authentication: Register and login functionality.
+- 🏠 Event Listings: Displays all events in a responsive grid layout.
+  - If the user already booked the event, a "Booked" label is shown instead of the "Book Now" button.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- 📄 Event Details Page:
+  - Shows event name, description, date, time, category, venue, image, and price.
+  - User can adjust quantity of tickets.
+  - Upon booking, user is redirected to a "Congratulations" page. (go to cart and click confirm purchase)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 🧾 Admin Panel:
+  - Role-based access (Admin/User)
+  - Protected Routes — only Admin can access the Admin Panel
+  - Full CRUD for managing events
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 🖼 Image Upload: Admins can upload event images during creation or editing.
+- 🏷 Event Categories: Events are categorized for better filtering and organization.
+- 💤 Lazy Loading: Implemented for key pages and components to enhance performance.
+- 🌙 Dark Mode Support
+- 🌍 Multi-language Support: English and Spanish using i18next.
+- 📱 Responsive Design: Fully responsive across mobile screens & desktop.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 🌐 Live Demo
+
+The frontend is deployed on Vercel.
+
+🔗 Live Demo: [https://areeb-event-booking-frontend.vercel.app/] 
+
+---
+
+## 🧠 Planning & Design
+
+- ✅ UI/UX Design: Custom-built UI designed from scratch.  
+  [Design Link –  https://www.figma.com/design/3zpt4oK5HYUPNUfJIM90sL/Areeb-compitition?node-id=0-1&p=f&t=nEpzN1r5lEfk6EOK-0  ]
+- ✅ User Flow: Mapped and finalized before implementation. ( The User flow is Attached in the same Figma design file )
+- ✅ Architecture: Modular design with reusable components and clear folder structure.
+
+---
+
+## 🧰 Tech Stack
+
+| Tool             | Description                            |
+|------------------|----------------------------------------|
+| React + Vite     | Modern web app setup with fast builds  |
+| TypeScript       | Type-safe development                  |
+| Redux Toolkit    | Local state management                 |
+| React Query      | Remote server-state management         |
+| Tailwind CSS     | Utility-first CSS for fast styling     |
+| i18next          | Internationalization (i18n)            |
+| React Router     | Routing system                         |
+| Vercel           | Deployment platform                    |
+
+---
+
+##🤖
+
+| AI Tool        | Usage                                        |
+| -------------- | -------------------------------------------- |
+| ChatGPT        | Logic planning, validation, guard setup      |
+| Cursor IDE     | Inline AI coding and cleanup                 |
+| Grok           | Refactoring and on-the-fly code assistance   |
+| DeepSeek       | Best-practice implementation and suggestions |
+
+
+---
+
+
